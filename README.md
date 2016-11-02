@@ -79,3 +79,67 @@ off :Power
 off -r-> [*]
 ```
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuOhMYbNGBTArKmXAJKofv0AJ87v-MffLS7bcINA6Pt58QL5UQef_MXf4Mi5A8ILVlpmnioGpBzqjlmWkcfbNN59KcboIcPzNp0Kq0A8mEAEqn2M_F2ya8nKY691Vdbh41MQ3RGOwWOlB8JKl1UGU0000)
+
+
+activity diagram.
+
+ภาพที่ 1
+```
+@startuml
+(*) --> if "Some Test" then
+
+  -->[true] "activity 1"
+  
+  if "" then
+    -> "activity 3" as a3
+  else
+    if "Other test" then
+      -left-> "activity 4"
+    else
+      --> "activity 5"
+    endif
+  endif
+else
+  ->[false] "activity 2"
+endif
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/LP112i8m44NtESKdAnMoqEgsz0Okwgwu23h1G5eXcGhUtaaifWw12Rmtaq-wn3RoF0QrsMrXJ0lleFldIBXGOWr-qAGKCXeupdI5jZVsByzlxBK0ENbaCI4bIwhJQDW4smYXaAW8sJ-B7i7r3PGoWHp_BJZgWdx39SgAdnO-tRrJjQioa8EtWxDoNmS_bE1VLNNIvGC-)
+
+
+
+ภาพที่ 2
+```
+@startuml
+(*) -->  ValidateOrder
+  --> if [Valid] 
+  -->"ReceiveOrder"
+ -->  (*)
+endif
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuTBGqbJGrRLJK0XBpCbCIIn9zIzAIItYub80YsQcAKI39M8LW28GGQMWrEJKp3A8GYKkY6wWCLnSgNafcMbSN0v06cWq0000)
+
+
+ภาพที่3 
+```
+@startuml
+[*] -->  Authorizing
+ Authorizing--> Authorizing:time<=7
+ Authorizing-->Authorized
+Authorizing --> Rejected : Paymentnotokay
+Authorized-->Purchased:paymentokey
+Purchased-->[*]
+Rejected-->[*]
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuOhMYbNGrRLJK70iBSd8BygioinBvqBcW2IHk5ObcRcfDhRcw6fWlDGKBYG9iD51gLcfoIMfAGfM2W69bRcfUILv-INvsOcLN0XDG7K1fKN96Od5gIbM1H1L-TcfbLnmKQ0Ae5kvO8P1kGwfUIb0Rm00)
+
+ภาพที่4
+```
+```
+
+
+ภาพที่ 5
+```
+```
