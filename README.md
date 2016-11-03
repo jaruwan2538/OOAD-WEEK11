@@ -152,5 +152,16 @@ endif
 
 ภาพที่ 5
 ```
-
+@startuml
+(*) -->  ChooseSeat
+ChooseSeat-->CallEmployee
+CallEmployee-->RequestMenu
+RequestMenu-->ChooseCoffee
+--> if confirm=yes
+ -->callEmployee
+ callEmployee-->OrderCoffee
+OrderCoffee-->(*)
+endif
+@enduml
 ```
+![](http://www.plantuml.com/plantuml/img/LOzD2W8n38NtEKMMZZ17K0QAIn7q1AMJOA5jj3-BkRsf25DNUU7nlhmifTfSMmnmE4uupsT4ynGfz21ROPVg61l29Rw2R4GmBkhTwTser2kb1eFkgI_22BEcEjypEadiSpnjLA3VT2CPtJ_wbbVAl_oWrT76G6dr38iE_U43)
