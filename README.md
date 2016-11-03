@@ -158,10 +158,10 @@ ChooseSeat-->CallEmployee
 CallEmployee-->RequestMenu
 RequestMenu-->ChooseCoffee
 --> if confirm=yes
- -->callEmployee
- callEmployee-->OrderCoffee
-OrderCoffee-->(*)
+ -r->callEmployee
+ callEmployee-r->OrderCoffee
+OrderCoffee-r->(*)
 endif
 @enduml
 ```
-![](http://www.plantuml.com/plantuml/img/LOzD2W8n38NtEKMMZZ17K0QAIn7q1AMJOA5jj3-BkRsf25DNUU7nlhmifTfSMmnmE4uupsT4ynGfz21ROPVg61l29Rw2R4GmBkhTwTser2kb1eFkgI_22BEcEjypEadiSpnjLA3VT2CPtJ_wbbVAl_oWrT76G6dr38iE_U43)
+![](http://www.plantuml.com/plantuml/img/JOz12W8n34NtEKMMAlG83WF5fGXwWZAJOg5jD6qNStjJ6PYkyiFZFvAvL2UrfGYdoncDcH3jcxdGYro58ognBiPR-aJUY61Sb3tfswZKE-K6G-wjlyAozzhg_k1nuUo3fEj61T28cPPHZUFMwKDMajqmv8xqQA2y1W-p3dtZ1m00)
