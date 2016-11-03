@@ -137,9 +137,20 @@ Rejected-->[*]
 
 ภาพที่4
 ```
+@startuml
+(*) -->  MakeCoffee
+MakeCoffee-->ChackCoffee
+--> if Complete
+
+--> SendOrder
+SendOrder-->(*)
+endif
+@enduml
 ```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuTBGqbJGrRLJKF1Dp4vrpazBIqtbGZ21CiuPYSdPK0cGmimq1UVyt8ASr99KBh10S6fUYdzHIceH5vm550QQomNaPgPnEG0fe4q0)
 
 
 ภาพที่ 5
 ```
+
 ```
